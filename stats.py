@@ -11,6 +11,9 @@ def mean(vals):
     return total/length
 
 def median(vals):
+    """ Computes median from a list of values.
+      The only tricky part is about whether there are an odd or even
+      number of values """
     vals.sort()
     z = len(vals)
     index = z / 2
